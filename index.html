@@ -18,6 +18,7 @@
   <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
   <style>
     @import url('https://fonts.cdnfonts.com/css/lato');
+    @import url('https://fonts.cdnfonts.com/css/cmu-typewriter-text');
 
     :root {
       --main-color1: #ffa17a;
@@ -28,7 +29,8 @@
     }
 
     * {
-      font-family: 'Lato', sans-serif;
+     
+     
     }
 
     .gradient {
@@ -37,6 +39,71 @@
 
     #init {
       height: 100vh;
+      font-family: 'Lato', sans-serif;
+    }
+
+
+
+
+
+    /* SECCIONES */
+
+    .seccion {
+      width: 100%;
+      height: 80vh;
+      background-color: var(--main-color2);
+
+    }
+
+    #primera {
+
+      display: grid;
+      grid-template-areas:
+        'h1 h1 h2 h2'
+        'h3 h4 h5 h6';
+       
+      /* grid-gap: 1px; */
+    }
+
+    .container1{
+      border: solid black 2px;
+    }
+
+    .uno{
+     
+      grid-area: h1;
+      background-image: url("./images/vista-frontal-mujer-sonriente-fuegos-artificiales.jpg");
+      background-repeat: no-repeat;
+      background-size:cover;
+      width: 50vw;
+    }
+    .dos{
+      grid-area: h2;
+      color:black;
+      font-family: 'CMU Typewriter Text', sans-serif;
+      font-size: 1.7em;
+      font-weight: 900;
+      padding-top: 1em;
+      text-align: center;
+    
+      
+    }
+    .dos p{
+      font-size: 0.8em;
+      font-weight: 100;
+      padding: 1em;
+    }
+    .tres{
+      grid-area: h3;
+    }
+    .cuatro{
+      grid-area: h4;
+    }
+    .cinco{
+      grid-area: h5;
+    }
+    .seis{
+      grid-area: h6;
     }
   </style>
 </head>
@@ -94,11 +161,11 @@
         <h1 class=" my-2 text-5xl font-bold leading-tight text-decoration-line: underline">
           To find your Kore
         </h1>
-        
 
-        
 
-        
+
+
+
         <button
           class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           Subscribe
@@ -115,81 +182,99 @@
 
     <!-- primera seccion  -->
 
-    
 
-  
-  <!--Footer-->
-  <footer class="bg-white">
-    <div class="container mx-auto px-8">
-      <div class="w-full flex flex-col md:flex-row py-6">
-        <svg width="40" height="40" viewBox="0 0 20 100">
-          <polygon points="0,50 100,0 100,100" fill="black" />
-        </svg>   
-        <div class="flex-1 mb-6 text-black">
 
-         
-          <a class="text-black-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#"> 
-                 
-            Koro
-          </a>
-        </div>
-        <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Links</p>
-          <ul class="list-reset mb-6">
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">FAQ</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Help</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Support</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Legal</p>
-          <ul class="list-reset mb-6">
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacy</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Social</p>
-          <ul class="list-reset mb-6">
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Linkedin</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Twitter</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Company</p>
-          <ul class="list-reset mb-6">
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Official Blog</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">About Us</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Contact</a>
-            </li>
-          </ul>
+
+    <div id="primera" class="seccion">
+
+      <div class="uno container1"></div>
+      <div class="dos container1"> 
+       <h2>Change the game. Meet new people!</h2> 
+       <p>There’s a Wiper and True beer for everyone, from the devoted aficionado to those taking their first tentative steps into the glorious, wide world of craft beer. At our Bristol brewery we obsess over creative recipes, brewing with skill and care for balanced, refined and refreshing drinking. That’s Beautiful Beer.</p>
+       <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-outbtn btn-black">Visit</button>
+       </div>
+       
+      <div class="tres container1"></div>
+      <div class="cuatro container1"></div>
+      <div class="cinco container1"></div>
+      <div class="seis container1"></div>
+    </div>
+
+
+
+
+    <!--Footer-->
+    <footer class="bg-white">
+      <div class="container mx-auto px-8">
+        <div class="w-full flex flex-col md:flex-row py-6">
+          <svg width="40" height="40" viewBox="0 0 20 100">
+            <polygon points="0,50 100,0 100,100" fill="black" />
+          </svg>
+          <div class="flex-1 mb-6 text-black">
+
+
+            <a class="text-black-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+
+              Koro
+            </a>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Links</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">FAQ</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Help</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Legal</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Social</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Linkedin</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Company</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Official Blog</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">About Us</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  
-  </footer>
+
+    </footer>
 
 
 </body>
